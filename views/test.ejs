@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"
+      dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#FDFEFE">
+
+        <title> Main Admin Panel</title>
+        <link rel="icon" href="public/images/logo/logo.png" type="image/gif" sizes="16x20">
+
+        <!-- Prevent the demo from appearing in search engines -->
+        <meta name="robots"
+              content="noindex">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+              rel="stylesheet">
+
+        <!-- Preloader -->
+        <link type="text/css"
+              href="./public/vendor/spinkit.css"
+              rel="stylesheet">
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css"
+              href="./public/vendor/perfect-scrollbar.css"
+              rel="stylesheet">
+
+        <!-- Material Design Icons -->
+        <link type="text/css"
+              href="./public/css/material-icons.css"
+              rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link type="text/css"
+              href="./public/css/fontawesome.css"
+              rel="stylesheet">
+
+        <!-- Preloader -->
+        <link type="text/css"
+              href="./public/css/preloader.css"
+              rel="stylesheet">
+
+        <!-- App CSS -->
+        <link type="text/css"
+              href="./public/css/app.css"
+              rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    </head>
+
+    <body class="layout-sticky-subnav layout-default ">
+
+        
+                                <div class="card table-responsive">
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th scope="col">Godown Name</th>
+                                                <th scope="col">Godown ID</th>
+                                                <th scope="col">Godown Address</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody">
+                                            <!--<tr>
+                                                <td scope="col">Demo Godown ID</td>
+                                                <td scope="col">Demo Godown Name</td>
+                                                <td scope="col">Demo Godown Address</td>
+                                                <td scope="col">
+                                                    <button id="#" type="button" onclick="remove_godown(this.id)" class="btn btn-outline-danger btn-sm waves-effect waves-light m-1" data-toggle="modal" data-target="#removegodown"><i class="fa fa-trash mr-1"></i> REMOVE</button>
+                                                </td>
+                                            </tr>-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <script>
+                                
+                                    const url88 = "/nfo_multi";
+                                    fetch(url88)
+                                        .then(function (response) {
+                                            return response.json();
+                                        })
+                                        .then(function (data) {
+                                            //$("#tbody tr").remove(); 
+                                            //appendData(data);
+                                            //var mydata = JSON.parse(data);
+                                            console.log(data.data
+                                            )
+                                        })
+                                        .catch(function (err) {
+                                            console.log('error: ' + err);
+                                        });
+                                    
+
+
+
+                               
+                                
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // END Header Layout Content -->
+
+
+        <!-- // END Drawer -->
+
+        <!-- jQuery -->
+        <!--<script src="./public/vendor/jquery.min.js"></script>-->
+
+        <!-- Bootstrap -->
+        <script src="./public/vendor/popper.min.js"></script>
+        <script src="./public/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="./public/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="./public/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="./public/vendor/material-design-kit.js"></script>
+
+        <!-- App JS -->
+        <script src="./public/js/app.js"></script>
+
+        <!-- Preloader -->
+        <script src="./public/js/preloader.js"></script>
+
+        <!-- Global Settings -->
+        <script src="./public/js/settings.js"></script>
+
+        <!-- Moment.js -->
+        <script src="./public/vendor/moment.min.js"></script>
+        <script src="./public/vendor/moment-range.js"></script>
+
+        <!-- Chart.js -->
+        <script src="./public/vendor/Chart.min.js"></script>
+
+        <!-- UI Charts Page JS -->
+        <script src="./public/js/chartjs-rounded-bar.js"></script>
+        <script src="./public/js/chartjs.js"></script>
+
+        <!-- Chart.js Samples -->
+        <script src="./public/js/page.instructor-dashboard.js"></script>
+
+        <!-- List.js -->
+        <script src="./public/vendor/list.min.js"></script>
+        <script src="./public/js/list.js"></script>
+
+        <!-- Bootstrap Icon List// http://mervick.github.io/material-design-icons/#add_shopping_cart -->
+
+
+        <script>
+        //    const url1 = "/godown/getdata";
+//
+        //    fetch(url1)
+        //        .then(function (response) {
+        //            return response.json();
+        //        })
+        //        .then(function (data) {
+        //        
+        //            appendData2(data);
+        //            //appendData3(data);
+        //        })
+        //        .catch(function (err) {
+        //            console.log('error: ' + err);
+        //        });
+//
+        //        function appendData2(data) {
+        //            var id;
+        //            var daySelect;
+        //            var myOption;
+        //                    
+        //        
+        //                    for (var i = 0; i < data.length; i++) {
+        //                    
+        //                    
+        //                    
+        //                        id = data[i].id;
+        //    
+        //                        daySelect = document.getElementById("godown_name");
+        //                        myOption = document.createElement("option");
+        //                        myOption.text = data[i].godown_name ;
+        //                        myOption.value = data[i].id;
+        //                        daySelect.add(myOption);
+        //                                            
+        //                    }
+        //                    //myOption.text = "Others";
+        //                    //myOption.value = 'Others';
+        //                    select_search()
+        //        }
+        //        function select_search() {
+        //            $('#godown_name').selectize({
+        //                sortField: 'text'
+        //            });
+        //        };
+        </script>
+
+    </body>
+
+</html>
